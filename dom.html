@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var a = document.createElement("button");
+        document.body.appendChild(a);
+        a.innerText = "register";
+        a.addEventListener("click", () => {
+            username = prompt("enter user name")
+            password = prompt("enter paswword")
+            Email = prompt("enter Email")
+            mothername = prompt("enter your mother name")
+
+
+            window.localStorage.setItem("username", username)
+            window.localStorage.setItem("password", password)
+            window.localStorage.setItem("email", Email)
+            window.localStorage.setItem("mothername", mothername)
+        })
+
+
+        var z = document.createElement("button");
+
+        z.innerText = "see more details";
+
+        document.body.appendChild(z);
+        z.style.marginLeft = "50px";
+        z.addEventListener("click", () => {
+            window.location.assign("./dom1.html");
+        })
+
+    </script>
+</body>
+
+</html>

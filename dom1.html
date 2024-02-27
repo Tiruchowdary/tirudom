@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 3px solid yellow;
+    }
+</style>
+
+<body>
+    <script>
+        var t= document.createElement("table");
+        document.body.appendChild(t);
+
+
+        
+         var a=document.createElement("tr");
+         var b=document.createElement("td");
+         b.innerText="username";
+         t.appendChild(a);
+         a.appendChild(b);
+
+         var c=document.createElement("td");
+         c.innerHTML=window.localStorage.getItem("username");
+         a.appendChild(c)
+
+
+         var a1=document.createElement("tr");
+         var b1=document.createElement("td");
+         b1.innerText="password";
+         t.appendChild(a1);
+         a1.appendChild(b1);
+
+         var c1=document.createElement("td");
+         c1.innerHTML=window.localStorage.getItem("password");
+         a1.appendChild(c1)
+
+         var a2=document.createElement("tr");
+         var b2=document.createElement("td");
+         b2.innerText="Email";
+         t.appendChild(a2);
+         a2.appendChild(b2);
+
+         var c2=document.createElement("td");
+         c2.innerHTML=window.localStorage.getItem("email");
+         a2.appendChild(c2)
+
+         var a3=document.createElement("tr");
+         var b3=document.createElement("td");
+         b3.innerText="mothername";
+         t.appendChild(a3);
+         a3.appendChild(b3);
+
+         var c3=document.createElement("td");
+         c3.innerHTML=window.localStorage.getItem("mothername");
+         a3.appendChild(c3)
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
